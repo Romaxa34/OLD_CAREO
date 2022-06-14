@@ -1,0 +1,182 @@
+.wrapper {
+    margin: 100px 50px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+html {
+    background-color: #000;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+}
+.container {
+    position: relative;
+    z-index: 2;
+}
+// ---------------------------HEADER-------------------------
+.header {
+}
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.header__logo {
+    padding-left: 50px;
+}
+.header__img {
+}
+.header__text {
+}
+.header__menu {
+}
+.menu__list {
+    display: flex;
+}
+.menu__iteam {
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 55px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+
+    & a {
+        text-decoration: none;
+        color: #1d1d1d;
+    }
+}
+
+.header__btn {
+    position: relative;
+}
+
+.btn {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 20px 50px;
+    background: #000000;
+    border: 1px solid #000000;
+    width: 147px;
+    height: 57px;
+    justify-content: center;
+    align-items: center;
+    & a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        border: 3px solid #000;
+        left: -1px;
+        top: -1px;
+        width: 150px;
+        height: 60px;
+    }
+}
+// -------------------MAIN--------------------
+.main {
+}
+
+.main__row {
+    display: flex;
+}
+.main__card {
+    display: flex;
+    margin: 155px 0px 0px 77px;
+    width: 759px;
+    height: 479px;
+    position: relative;
+}
+.main__card__img {
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    z-index: 6;
+}
+.main__card__card {
+    padding: 54px 0px 0px 40px;
+    position: relative;
+    z-index: 5;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.14) 4.13%, rgba(255, 255, 255, 0.6) 80.29%);
+    mix-blend-mode: normal;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 70px 40px rgba(74, 85, 188, 0.137074);
+    backdrop-filter: blur(19.028px);
+    border-radius: 20px;
+}
+.title {
+    font-family: "Didot";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 103px;
+    & span {
+        font-weight: 700;
+    }
+}
+.text {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+}
+.main__picture {
+    margin: 77px 120px 60px 5px;
+    position: relative;
+    z-index: 3;
+}
+
+// ----------------------oval and route---------------------
+.oval {
+    position: absolute;
+    z-index: 1;
+    width: 1076px;
+    height: 1076px;
+    left: 0px;
+    top: 0px;
+
+    background: radial-gradient(77.13% 77.13% at 75.9% 57.03%, #ffd9d7 0%, #f2eeff 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    filter: blur(135.914px);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.route {
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50px;
+        top: -50px;
+        z-index: 4;
+        background: #ff9890;
+        width: 67px;
+        height: 67px;
+        border-radius: 50%;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 150px;
+        top: -50px;
+        z-index: 4;
+        background: #ff9890;
+        width: 67px;
+        height: 67px;
+        border-radius: 50%;
+    }
+}
