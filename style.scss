@@ -160,23 +160,118 @@ html {
     &::before {
         content: "";
         position: absolute;
-        left: 50px;
-        top: -50px;
+        left: 54px;
+        top: 33px;
         z-index: 4;
         background: #ff9890;
-        width: 67px;
-        height: 67px;
+        width: 149px;
+        height: 149px;
         border-radius: 50%;
+        filter: blur(25px);
     }
     &::after {
         content: "";
         position: absolute;
-        left: 150px;
-        top: -50px;
+        right: 27px;
+        top: -29px;
         z-index: 4;
         background: #ff9890;
         width: 67px;
         height: 67px;
         border-radius: 50%;
     }
+}
+.route_2 {
+    &::after {
+        content: "";
+        position: absolute;
+        right: -588px;
+        top: 80px;
+        width: 61px;
+        height: 61px;
+        z-index: 4;
+        background: #ff9890;
+        border-radius: 50%;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        right: 295px;
+        bottom: -19px;
+        width: 61px;
+        height: 61px;
+        z-index: 4;
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(322.37deg, #000000 21.81%, #d8d8d8 144.42%);
+        border-radius: 50%;
+    }
+}
+.random__lines > img {
+    position: absolute;
+    bottom: 45px;
+    right: -68px;
+    z-index: 6;
+}
+// --------------------footer-------------------------
+.footer {
+}
+.footer__row {
+    display: flex;
+    margin: -100px 0px 0px 60px;
+    position: relative;
+}
+.footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #000000 0%, #303030 100%);
+    border: 2px solid #1d1d1d;
+    width: 270px;
+    height: 116px;
+    & a {
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+.footer__contact {
+    display: flex;
+    margin: 0px 0px 0px 40px;
+    align-items: center;
+    justify-content: center;
+}
+.footer__contact__img {
+    padding: 0px 20px 0px 0px;
+}
+.footer__contact__tel {
+    display: flex;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+    color: #000000;
+    & a {
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 40px;
+        color: #000000;
+        text-decoration: none;
+    }
+}
+.avtor {
+    position: absolute;
+    bottom: 5px;
+    right: 50px;
+    font-family: Didot;
+    font-style: normal;
+    font-weight: 600;
 }
